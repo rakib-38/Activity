@@ -210,15 +210,65 @@ _________________*/
 	font-size: 15px;
 	line-height: 23px;
 	font-weight: 400;
-	letter-spacing: 3px;
+	padding: 0px 10px;
 }
 
 .navbar li a {
 	color: #fff;
+	transition: 0.3s linear;
+}
+
+.navbar li a:hover {
+	color: #30C39E;
 }
 
 .navbar li a.active {
 	color: #30c39e;
+}
+
+
+/*Dropdown*/
+
+.dropbtn {
+	color: #fff;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	font-size: 15px;
+	line-height: 23px;
+	font-weight: 400;
+}
+
+.dropdown:hover .dropbtn {
+	color: #30c39e;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown .dropdown_content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  z-index: 1;
+}
+
+.dropdown .dropdown_content a {
+	color: #000;
+	padding: 8px 20px;
+	display: block;
+	transition: 0.3s linear;
+}
+.dropdown .dropdown_content a:hover {
+	background-color: #F8F9FA;
+	color: #30C39E;
+}
+
+.dropdown:hover .dropdown_content {
+  display: block;
 }
 
 /*__________________
@@ -354,6 +404,11 @@ ________________________*/
 	margin-right: 30px;
 	background: #f8f9fa;
 	width: 100%;
+}
+
+.exp_section .exp_card .exp-item img {
+	width: 100%;
+    height: auto;
 }
 
 .exp_section .exp_card .exp_pera {
